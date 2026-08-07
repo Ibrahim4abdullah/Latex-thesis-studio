@@ -1,0 +1,22 @@
+\documentclass[12pt,a4paper,oneside]{report}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{arabic}
+\setmainfont{TeX Gyre Termes}
+\newfontfamily\arabicfont[Script=Arabic]{Arial}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}\onehalfspacing
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,longtable,tabularx,multirow}
+\usepackage{caption,subcaption,float}
+\usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{references.bib}
+\begin{document}
+\tableofcontents
+\include{chapters/chapter1}
+\printbibliography
+\end{document}
